@@ -16,6 +16,22 @@ $(document).ready(function () {
 	});
 });
 
+/*smooth scroll*/
+$('[data-scroll]').on('click', function (event) {
+	event.preventDefault();
+
+	let $this = $(this),
+		elementId = $this.data('scroll'),
+		elementOffset = $(elementId).offset().top;
+
+	$('nav a').removeClass('active');
+	$this.addClass('active');
+
+	$('html, body').animate({
+		scrollTop: elementOffset
+	}, 800);
+});
+
 AOS.init({
 	// Global settings:
 	disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
