@@ -892,7 +892,7 @@ button {
 
 .products {
   position: relative;
-  padding: 90px 0px 0px 0px;
+  padding: 50px 0px 0px 0px;
 }
 
 .products .line {
@@ -957,6 +957,7 @@ button {
 }
 
 .products__item {
+  padding-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
